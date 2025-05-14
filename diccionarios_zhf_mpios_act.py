@@ -9,7 +9,7 @@ import datetime
 
 # Lista de códigos DIVIPOLA de municipios a procesar
 # Municipios con lógica condicional (requieren lógica especial para ciertas variables)
-municipios_condicionales = ['25040', '25599', '25269', '25326', '25596', '25645', '25769', '25805', '25807', '25815']
+municipios_condicionales = ['25035', '25040', '25599', '25269', '25326', '25596', '25769', '25805', '25807', '25815'] # COMENTADA 25645 HASTA VERIFICAR SI TIENE VALORES EN SUS ZHF
 
 # Municipios con lógica de diccionario plano (sin condicionales)
 municipios_planos = []  # Agrega aquí los demás códigos
@@ -18,16 +18,66 @@ municipios_planos = []  # Agrega aquí los demás códigos
 # Aquí tú completas con las codificaciones específicas de cada municipio
 diccionarios_mpios = {
     # FALTAN VARIAS CODIFICACIONES DE VARIABLES, ADEMAS SE EVIDENCIAN MAS ZHF QUE EN EL DOCUMENTO BASE. NO LISTO PARA EJECUTAR
+                #               ---------           MPIOS GO CATASTRAL                  --------------
     '25035': {
         'orden_variables': ['topografia', 'influencia_vial', 'servicio_publico', 'uso_actual_suelo', 'norma_uso_suelo', 'tipificacion_construccion'],
-        'longitudes': [1, 1, 1, 1, 2, 2],
-        'topografia': {'1': 'Plano', '2': 'Inclinado'},
-        'influencia_vial': {'1': 'Pavimentadas', '2': 'Sin_Pavimentar', '3': 'Peatonales'},
-        'servicio_publico': {'1': 'Servicios_Basicos_Y_Complementarios'},
-        'uso_actual_suelo': {'1': 'Residencial', '2': 'Comercial', '3': 'Institucional'},
-        'norma_uso_suelo': {'01': 'Mixto'}, #FALTA ESTE
-        'tipificacion_construccion': {'01': 'Tipo 1', '02': 'Tipo 2'}   #FALTA ESTE
-    },
+        'longitudes': [1, 1, 1, 1, 3, 1],
+        'topografia': {'1': 'Plano', '2': 'Inclinado', '3': 'Empinado'},
+        'influencia_vial': {'1': 'Pavimentadas', '2': 'Sin_Pavimentar', '3': 'Peatonales', '4': 'Sin_Vias'},
+        'servicio_publico': {'1': 'Sin_Servicios', '2': 'Básicos_Incompletos', '3': 'Básicos_Completos ', '4': 'Básicos_Y_Complementarios'},
+        'uso_actual_suelo': {'1': 'Residencial', '2': 'Comercial', '3': 'Industrial', '4': 'Institucional', '5': 'Lote', '6': 'Espacio Publico'},
+        'norma_uso_suelo': {
+            '110': 'Protegido, Múltiple, Sin Tratamiento', '111': 'Protegido, Múltiple, Conservación', '112': 'Protegido, Múltiple, Recuperación', '113': 'Protegido, Múltiple, Conservacion Urbanistica',
+            '114': 'Protegido, Múltiple, Consolidacion', '116': 'Protegido, Múltiple, Desarrollo de areas sin urbanizar', '117': 'Protegido, Múltiple, Mejoramiento Integral', '118': 'Protegido, Múltiple, Desarrollo de areas urbanizadas',
+            '119': 'Protegido, Múltiple, Desarrollo por urbanizaciones', '120': 'Protegido, Residencial, Sin Tratamiento', '121': 'Protegido, Residencial, Conservación', '122': 'Protegido, Residencial, Recuperación',
+            '123': 'Protegido, Residencial, Conservacion Urbanistica', '124': 'Protegido, Residencial, Consolidacion', '126': 'Protegido, Residencial, Desarrollo de areas sin urbanizar', '127': 'Protegido, Residencial, Mejoramiento Integral',
+            '128': 'Protegido, Residencial, Desarrollo de areas urbanizadas', '129': 'Protegido, Residencial, Desarrollo por urbanizaciones', '130': 'Protegido, Residencial Desarrollo, Sin Tratamiento', '131': 'Protegido, Residencial Desarrollo, Conservación',
+            '132': 'Protegido, Residencial Desarrollo, Recuperación', '133': 'Protegido, Residencial Desarrollo, Conservacion Urbanistica', '134': 'Protegido, Residencial Desarrollo, Consolidacion', '136': 'Protegido, Residencial Desarrollo, Desarrollo de areas sin urbanizar',
+            '137': 'Protegido, Residencial Desarrollo, Mejoramiento Integral', '138': 'Protegido, Residencial Desarrollo, Desarrollo de areas urbanizadas', '139': 'Protegido, Residencial Desarrollo, Desarrollo por urbanizaciones', '140': 'Protegido, Residencial Sin Desarrollo, Sin Tratamiento',
+            '141': 'Protegido, Residencial Sin Desarrollo, Conservación', '142': 'Protegido, Residencial Sin Desarrollo, Recuperación', '143': 'Protegido, Residencial Sin Desarrollo, Conservacion Urbanistica', '144': 'Protegido, Residencial Sin Desarrollo, Consolidacion',
+            '146': 'Protegido, Residencial Sin Desarrollo, Desarrollo de areas sin urbanizar', '147': 'Protegido, Residencial Sin Desarrollo, Mejoramiento Integral', '148': 'Protegido, Residencial Sin Desarrollo, Desarrollo de areas urbanizadas', '149': 'Protegido, Residencial Sin Desarrollo, Desarrollo por urbanizaciones',
+            '150': 'Protegido, Comercial, Sin Tratamiento', '151': 'Protegido, Comercial, Conservación', '152': 'Protegido, Comercial, Recuperación', '153': 'Protegido, Comercial, Conservacion Urbanistica',
+            '154': 'Protegido, Comercial, Consolidacion', '156': 'Protegido, Comercial, Desarrollo de areas sin urbanizar', '157': 'Protegido, Comercial, Mejoramiento Integral', '158': 'Protegido, Comercial, Desarrollo de areas urbanizadas',
+            '159': 'Protegido, Comercial, Desarrollo por urbanizaciones', '160': 'Protegido, Industrial, Sin Tratamiento', '161': 'Protegido, Industrial, Conservación', '162': 'Protegido, Industrial, Recuperación',
+            '163': 'Protegido, Industrial, Conservacion Urbanistica', '164': 'Protegido, Industrial, Consolidacion', '166': 'Protegido, Industrial, Desarrollo de areas sin urbanizar', '167': 'Protegido, Industrial, Mejoramiento Integral', '168': 'Protegido, Industrial, Desarrollo de areas urbanizadas',
+            '169': 'Protegido, Industrial, Desarrollo por urbanizaciones', '170': 'Protegido, Dotacional, Sin Tratamiento', '171': 'Protegido, Dotacional, Conservación', '172': 'Protegido, Dotacional, Recuperación',
+            '173': 'Protegido, Dotacional, Conservacion Urbanistica', '174': 'Protegido, Dotacional, Consolidacion', '176': 'Protegido, Dotacional, Desarrollo de areas sin urbanizar', '177': 'Protegido, Dotacional, Mejoramiento Integral', '178': 'Protegido, Dotacional, Desarrollo de areas urbanizadas',
+            '179': 'Protegido, Dotacional, Desarrollo por urbanizaciones', '180': 'Protegido, Senderos Ecologicos, Sin Tratamiento', '181': 'Protegido, Senderos Ecologicos, Conservación', '182': 'Protegido, Senderos Ecologicos, Recuperación',
+            '183': 'Protegido, Senderos Ecologicos, Conservacion Urbanistica', '184': 'Protegido, Senderos Ecologicos, Consolidacion', '186': 'Protegido, Senderos Ecologicos, Desarrollo de areas sin urbanizar', '187': 'Protegido, Senderos Ecologicos, Mejoramiento Integral', '188': 'Protegido, Senderos Ecologicos, Desarrollo de areas urbanizadas',
+            '189': 'Protegido, Senderos Ecologicos, Desarrollo por urbanizaciones', '210': 'No protegido, Múltiple, Sin Tratamiento', '211': 'No protegido, Múltiple, Conservación', '212': 'No protegido, Múltiple, Recuperación',
+            '213': 'No protegido, Múltiple, Conservacion Urbanistica', '214': 'No protegido, Múltiple, Consolidacion', '216': 'No protegido, Múltiple, Desarrollo de areas sin urbanizar', '217': 'No protegido, Múltiple, Mejoramiento Integral', '218': 'No protegido, Múltiple, Desarrollo de areas urbanizadas',
+            '219': 'No protegido, Múltiple, Desarrollo por urbanizaciones', '220': 'No protegido, Residencial, Sin Tratamiento', '221': 'No protegido, Residencial, Conservación', '222': 'No protegido, Residencial, Recuperación',
+            '223': 'No protegido, Residencial, Conservacion Urbanistica', '224': 'No protegido, Residencial, Consolidacion', '226': 'No protegido, Residencial, Desarrollo de areas sin urbanizar', '227': 'No protegido, Residencial, Mejoramiento Integral', '228': 'No protegido, Residencial, Desarrollo de areas urbanizadas',
+            '229': 'No protegido, Residencial, Desarrollo por urbanizaciones', '230': 'No protegido, Residencial Desarrollo, Sin Tratamiento', '231': 'No protegido, Residencial Desarrollo, Conservación', '232': 'No protegido, Residencial Desarrollo, Recuperación',
+            '233': 'No protegido, Residencial Desarrollo, Conservacion Urbanistica', '234': 'No protegido, Residencial Desarrollo, Consolidacion', '236': 'No protegido, Residencial Desarrollo, Desarrollo de areas sin urbanizar', '237': 'No protegido, Residencial Desarrollo, Mejoramiento Integral', '238': 'No protegido, Residencial Desarrollo, Desarrollo de areas urbanizadas',
+            '239': 'No protegido, Residencial Desarrollo, Desarrollo por urbanizaciones', '240': 'No protegido, Residencial Sin Desarrollo, Sin Tratamiento', '241': 'No protegido, Residencial Sin Desarrollo, Conservación', '242': 'No protegido, Residencial Sin Desarrollo, Recuperación',
+            '243': 'No protegido, Residencial Sin Desarrollo, Conservacion Urbanistica', '244': 'No protegido, Residencial Sin Desarrollo, Consolidacion', '246': 'No protegido, Residencial Sin Desarrollo, Desarrollo de areas sin urbanizar', '247': 'No protegido, Residencial Sin Desarrollo, Mejoramiento Integral', '248': 'No protegido, Residencial Sin Desarrollo, Desarrollo de areas urbanizadas',
+            '249': 'No protegido, Residencial Sin Desarrollo, Desarrollo por urbanizaciones', '250': 'No protegido, Comercial, Sin Tratamiento', '251': 'No protegido, Comercial, Conservación', '252': 'No protegido, Comercial, Recuperación',
+            '253': 'No protegido, Comercial, Conservacion Urbanistica', '254': 'No protegido, Comercial, Consolidacion', '256': 'No protegido, Comercial, Desarrollo de areas sin urbanizar', '257': 'No protegido, Comercial, Mejoramiento Integral', '258': 'No protegido, Comercial, Desarrollo de areas urbanizadas',
+            '259': 'No protegido, Comercial, Desarrollo por urbanizaciones', '260': 'No protegido, Industrial, Sin Tratamiento', '261': 'No protegido, Industrial, Conservación', '262': 'No protegido, Industrial, Recuperación',
+            '263': 'No protegido, Industrial, Conservacion Urbanistica', '264': 'No protegido, Industrial, Consolidacion', '266': 'No protegido, Industrial, Desarrollo de areas sin urbanizar', '267': 'No protegido, Industrial, Mejoramiento Integral', '268': 'No protegido, Industrial, Desarrollo de areas urbanizadas',
+            '269': 'No protegido, Industrial, Desarrollo por urbanizaciones', '270': 'No protegido, Dotacional, Sin Tratamiento', '271': 'No protegido, Dotacional, Conservación', '272': 'No protegido, Dotacional, Recuperación',
+            '273': 'No protegido, Dotacional, Conservacion Urbanistica', '274': 'No protegido, Dotacional, Consolidacion', '276': 'No protegido, Dotacional, Desarrollo de areas sin urbanizar', '277': 'No protegido, Dotacional, Mejoramiento Integral', '278': 'No protegido, Dotacional, Desarrollo de areas urbanizadas',
+            '279': 'No protegido, Dotacional, Desarrollo por urbanizaciones', '280': 'No protegido, Senderos Ecologicos, Sin Tratamiento', '281': 'No protegido, Senderos Ecologicos, Conservación', '282': 'No protegido, Senderos Ecologicos, Recuperación',
+            '283': 'No protegido, Senderos Ecologicos, Conservacion Urbanistica', '284': 'No protegido, Senderos Ecologicos, Consolidacion', '286': 'No protegido, Senderos Ecologicos, Desarrollo de areas sin urbanizar', '287': 'No protegido, Senderos Ecologicos, Mejoramiento Integral', '288': 'No protegido, Senderos Ecologicos, Desarrollo de areas urbanizadas',
+            '289': 'No protegido, Senderos Ecologicos, Desarrollo por urbanizaciones'
+        }, #FALTA ESTE
+        'tipificacion_construccion': {
+            'Residencial': {
+                '1': 'Residencial_1_Bajo_Bajo',
+                '2': 'Residencial_2_Bajo',
+                '3': 'Residencial_3_Medio_Bajo',
+                '4': 'Residencial_4_Medio',
+                '5': 'Residencial_5_Medio_Alto',
+                '6': 'Residencial_6_Alto',
+                '0': ''
+            },
+            'Comercial': {
+                '1': 'Comercial_Barrial',
+                '2': 'Comercial_Sectorial',
+                '0': ''
+            }
+    }},
 
     # ESPECIAL PORQUE TIPIFICACION CONSTRUCCION ES CONDICIONAL. OK PARA EJECUTAR
     '25040': {
@@ -475,16 +525,58 @@ diccionarios_mpios = {
                 '0': ''
             }
     }},
+#       ----- MPIOS INMOBILIARIA -------    
+    '25053': {
+        'orden_variables': ['topografia', 'influencia_vial', 'servicio_publico', 'uso_actual_suelo', 'norma_uso_suelo', 'tipificacion_construccion'],
+        'longitudes': [1, 1, 1, 1, 3, 1],
+        'topografia': {'1': 'Plano', '2': 'Inclinado', '3': 'Empinado'},
+        'influencia_vial': {'1': 'Pavimentadas', '2': 'Sin_Pavimentar', '3': 'Peatonales', '4': 'Sin_Vias'},
+        'servicio_publico': {'1': 'Sin_Servicios', '2': 'Básicos_Incompletos', '3': 'Básicos_Completos ', '4': 'Básicos_Y_Complementarios'},
+        'uso_actual_suelo': {'1': 'Residencial', '2': 'Comercial', '3': 'Industrial', '4': 'Institucional', '5': 'Lote'},
+        'norma_uso_suelo': {
+            '100': 'Protegido, Sin área de actividad, Sin Tratamiento', '101': 'Protegido, Sin área de actividad, Desarrollo',
+            '102': 'Protegido, Sin área de actividad, Consolidación', '103': 'Protegido, Sin área de actividad, Mejoramiento', 
+            '120': 'Protegido, Residencial, Sin Tratamiento', '121': 'Protegido, Residencial, Desarrollo',
+            '122': 'Protegido, Residencial, Consolidación', '123': 'Protegido, Residencial, Mejoramiento',
+            '130': 'Protegido, Comercio y servicios, Sin Tratamiento', '131': 'Protegido, Comercio y servicios, Desarrollo',
+            '132': 'Protegido, Comercio y servicios, Consolidación', '133': 'Protegido, Comercio y servicios, Mejoramiento',
+            '150': 'Protegido, Dotacional, Sin Tratamiento', '151': 'Protegido, Dotacional, Desarrollo',
+            '152': 'Protegido, Dotacional, Consolidación', '153': 'Protegido, Dotacional, Mejoramiento',
+            '200': 'No protegido, Sin área de actividad, Sin Tratamiento', '201': 'No protegido, Sin área de actividad, Desarrollo',
+            '202': 'No protegido, Sin área de actividad, Consolidación', '203': 'No protegido, Sin área de actividad, Mejoramiento',
+            '220': 'No protegido, Residencial, Sin Tratamiento', '221': 'No protegido, Residencial, Desarrollo',
+            '222': 'No protegido, Residencial, Consolidación', '223': 'No protegido, Residencial, Mejoramiento',
+            '230': 'No protegido, Comercio y servicios, Sin Tratamiento', '231': 'No protegido, Comercio y servicios, Desarrollo',
+            '232': 'No protegido, Comercio y servicios, Consolidación', '233': 'No protegido, Comercio y servicios, Mejoramiento',
+            '250': 'No protegido, Dotacional, Sin Tratamiento', '251': 'No protegido, Dotacional, Desarrollo',
+            '252': 'No protegido, Dotacional, Consolidación', '253': 'No protegido, Dotacional, Mejoramiento'
+        },
+        'tipificacion_construccion': {
+            'Residencial': {
+                '1': 'Residencial_1_Bajo_Bajo',
+                '2': 'Residencial_2_Bajo',
+                '3': 'Residencial_3_Medio_Bajo',
+                '4': 'Residencial_4_Medio',
+                '5': 'Residencial_5_Medio_Alto',
+                '6': 'Residencial_6_Alto',
+                '0': ''
+            },
+            'Comercial': {
+                '1': 'Comercial_Barrial',
+                '2': 'Comercial_Sectorial',
+                '0': ''
+            }
+    }},
 }
 
 
 # Parámetros de conexión a la base de datos
 conexion_db = {
-    'dbname': '',
-    'user': '',
-    'password': '',
-    'host': '',
-    'port': ''
+    'dbname': 'Novedades_V1_Municipios',
+    'user': 'postgres',
+    'password': '1234jcgg',
+    'host': 'localhost',
+    'port': '5432'
 }
 
 # Ruta para guardar los reportes
