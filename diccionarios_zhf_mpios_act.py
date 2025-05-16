@@ -526,13 +526,14 @@ diccionarios_mpios = {
             }
     }},
 #       ----- MPIOS INMOBILIARIA -------    
+# LINEAL ESTE AUN NO ESTA LISTO PARA EJECUTAR
     '25053': {
         'orden_variables': ['topografia', 'influencia_vial', 'servicio_publico', 'uso_actual_suelo', 'norma_uso_suelo', 'tipificacion_construccion'],
         'longitudes': [1, 1, 1, 1, 3, 1],
         'topografia': {'1': 'Plano', '2': 'Inclinado', '3': 'Empinado'},
         'influencia_vial': {'1': 'Pavimentadas', '2': 'Sin_Pavimentar', '3': 'Peatonales', '4': 'Sin_Vias'},
-        'servicio_publico': {'1': 'Sin_Servicios', '2': 'Básicos_Incompletos', '3': 'Básicos_Completos ', '4': 'Básicos_Y_Complementarios'},
-        'uso_actual_suelo': {'1': 'Residencial', '2': 'Comercial', '3': 'Industrial', '4': 'Institucional', '5': 'Lote'},
+        'servicio_publico': {'1': 'Servicios_Basicos_Y_Complementarios'},
+        'uso_actual_suelo': {'1': 'Comercial', '3': 'Residencial', '5': 'Institucional'},
         'norma_uso_suelo': {
             '100': 'Protegido, Sin área de actividad, Sin Tratamiento', '101': 'Protegido, Sin área de actividad, Desarrollo',
             '102': 'Protegido, Sin área de actividad, Consolidación', '103': 'Protegido, Sin área de actividad, Mejoramiento', 
