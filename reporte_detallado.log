@@ -1,0 +1,309 @@
+Análisis iniciado: 2025-06-03 13:47:28.898035
+
+Obteniendo esquemas que comienzan con 'cun'...
+
+Analizando esquema: cun25019
+[cun25019.zhf_urbana] Total: 14, Incongruentes: 14, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25019.zhf_rural] Total: 22, Incongruentes: 22, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25035
+[cun25035.zhf_urbana] Total: 164, Incongruentes: 1, Completas: 163, Clasificación: mayoría datos completos
+[cun25035.zhf_rural] Total: 131, Incongruentes: 131, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25040
+[cun25040.zhf_urbana] Total: 60, Incongruentes: 1, Completas: 59, Clasificación: mayoría datos completos
+[cun25040.zhf_rural] Total: 129, Incongruentes: 129, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25053
+[cun25053.zhf_urbana] Total: 20, Incongruentes: 0, Completas: 20, Clasificación: mayoría datos completos
+[cun25053.zhf_rural] Total: 63, Incongruentes: 63, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25095
+[cun25095.zhf_urbana] Total: 21, Incongruentes: 21, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25095.zhf_rural] Total: 18, Incongruentes: 18, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25123
+[cun25123.zhf_urbana] Total: 24, Incongruentes: 24, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25123.zhf_rural] Total: 40, Incongruentes: 0, Completas: 40, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25151
+[cun25151.zhf_urbana] Total: 93, Incongruentes: 93, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25151.zhf_rural] Total: 87, Incongruentes: 6, Completas: 81, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25154
+[cun25154.zhf_urbana] Total: 12, Incongruentes: 12, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25154.zhf_rural] Total: 93, Incongruentes: 93, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25168
+[cun25168.zhf_urbana] Total: 34, Incongruentes: 0, Completas: 34, Clasificación: mayoría datos completos
+[cun25168.zhf_rural] Total: 409, Incongruentes: 1, Completas: 408, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25178
+[cun25178.zhf_urbana] Total: 33, Incongruentes: 33, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25178.zhf_rural] Total: 52, Incongruentes: 52, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25200
+[cun25200.zhf_urbana] Tabla sin registros.
+[cun25200.zhf_rural] Tabla sin registros.
+
+Analizando esquema: cun25224
+[cun25224.zhf_urbana] Tabla sin registros.
+[cun25224.zhf_rural] Tabla sin registros.
+
+Analizando esquema: cun25245
+[cun25245.zhf_urbana] Total: 31, Incongruentes: 31, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25245.zhf_rural] Total: 32, Incongruentes: 32, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25258
+[cun25258.zhf_urbana] Total: 33, Incongruentes: 33, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25258.zhf_rural] Total: 18, Incongruentes: 18, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25260
+[cun25260.zhf_urbana] Total: 25, Incongruentes: 25, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25260.zhf_rural] Total: 54, Incongruentes: 54, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25269
+[cun25269.zhf_urbana] Total: 243, Incongruentes: 4, Completas: 239, Clasificación: mayoría datos completos
+[cun25269.zhf_rural] Total: 405, Incongruentes: 405, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25279
+[cun25279.zhf_urbana] Total: 77, Incongruentes: 0, Completas: 77, Clasificación: mayoría datos completos
+[cun25279.zhf_rural] Total: 73, Incongruentes: 73, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25281
+[cun25281.zhf_urbana] Total: 36, Incongruentes: 36, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25281.zhf_rural] Total: 45, Incongruentes: 45, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25288
+[cun25288.zhf_urbana] Total: 45, Incongruentes: 45, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25288.zhf_rural] Total: 46, Incongruentes: 46, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25293
+[cun25293.zhf_urbana] Total: 24, Incongruentes: 24, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25293.zhf_rural] Total: 21, Incongruentes: 16, Completas: 5, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25297
+[cun25297.zhf_urbana] Total: 25, Incongruentes: 25, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25297.zhf_rural] Total: 99, Incongruentes: 99, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25299
+[cun25299.zhf_urbana] Total: 16, Incongruentes: 16, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25299.zhf_rural] Total: 41, Incongruentes: 33, Completas: 8, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25312
+[cun25312.zhf_urbana] Total: 39, Incongruentes: 39, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25312.zhf_rural] Total: 63, Incongruentes: 63, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25317
+[cun25317.zhf_urbana] Tabla sin registros.
+[cun25317.zhf_rural] Tabla sin registros.
+
+Analizando esquema: cun25320
+[cun25320.zhf_urbana] Total: 176, Incongruentes: 0, Completas: 176, Clasificación: mayoría datos completos
+[cun25320.zhf_rural] Total: 441, Incongruentes: 0, Completas: 441, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25326
+[cun25326.zhf_urbana] Total: 114, Incongruentes: 1, Completas: 113, Clasificación: mayoría datos completos
+[cun25326.zhf_rural] Total: 178, Incongruentes: 178, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25328
+[cun25328.zhf_urbana] Total: 19, Incongruentes: 19, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25328.zhf_rural] Total: 22, Incongruentes: 22, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25335
+[cun25335.zhf_urbana] Total: 50, Incongruentes: 50, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25335.zhf_rural] Total: 40, Incongruentes: 40, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25368
+[cun25368.zhf_urbana] Total: 67, Incongruentes: 67, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25368.zhf_rural] Total: 107, Incongruentes: 21, Completas: 86, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25372
+[cun25372.zhf_urbana] Total: 24, Incongruentes: 24, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25372.zhf_rural] Total: 111, Incongruentes: 111, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25386
+[cun25386.zhf_urbana] Total: 262, Incongruentes: 260, Completas: 2, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25386.zhf_rural] Total: 72, Incongruentes: 13, Completas: 59, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25394
+[cun25394.zhf_urbana] Total: 20, Incongruentes: 20, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25394.zhf_rural] Total: 109, Incongruentes: 9, Completas: 100, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25398
+[cun25398.zhf_urbana] Total: 14, Incongruentes: 14, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25398.zhf_rural] Total: 15, Incongruentes: 15, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25407
+[cun25407.zhf_urbana] Total: 18, Incongruentes: 18, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25407.zhf_rural] Total: 27, Incongruentes: 19, Completas: 8, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25436
+[cun25436.zhf_urbana] Total: 21, Incongruentes: 21, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25436.zhf_rural] Total: 51, Incongruentes: 51, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25438
+[cun25438.zhf_urbana] Total: 141, Incongruentes: 141, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25438.zhf_rural] Total: 95, Incongruentes: 95, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25483
+[cun25483.zhf_urbana] Total: 17, Incongruentes: 17, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25483.zhf_rural] Total: 8, Incongruentes: 8, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25486
+[cun25486.zhf_urbana] Total: 66, Incongruentes: 0, Completas: 66, Clasificación: mayoría datos completos
+[cun25486.zhf_rural] Total: 29, Incongruentes: 29, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25489
+[cun25489.zhf_urbana] Total: 29, Incongruentes: 0, Completas: 29, Clasificación: mayoría datos completos
+[cun25489.zhf_rural] Total: 505, Incongruentes: 1, Completas: 504, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25491
+[cun25491.zhf_urbana] Total: 53, Incongruentes: 0, Completas: 53, Clasificación: mayoría datos completos
+[cun25491.zhf_rural] Total: 277, Incongruentes: 2, Completas: 275, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25506
+[cun25506.zhf_urbana] Total: 32, Incongruentes: 32, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25506.zhf_rural] Total: 22, Incongruentes: 22, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25518
+[cun25518.zhf_urbana] Total: 29, Incongruentes: 29, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25518.zhf_rural] Total: 28, Incongruentes: 28, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25524
+[cun25524.zhf_urbana] Total: 43, Incongruentes: 43, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25524.zhf_rural] Total: 39, Incongruentes: 39, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25530
+[cun25530.zhf_urbana] Total: 27, Incongruentes: 27, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25530.zhf_rural] Total: 70, Incongruentes: 70, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25535
+[cun25535.zhf_urbana] Total: 9, Incongruentes: 9, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25535.zhf_rural] Total: 32, Incongruentes: 32, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25580
+[cun25580.zhf_urbana] Total: 59, Incongruentes: 59, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25580.zhf_rural] Total: 30, Incongruentes: 30, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25592
+[cun25592.zhf_urbana] Total: 58, Incongruentes: 0, Completas: 58, Clasificación: mayoría datos completos
+[cun25592.zhf_rural] Total: 1150, Incongruentes: 24, Completas: 1126, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25594
+[cun25594.zhf_urbana] Total: 34, Incongruentes: 34, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25594.zhf_rural] Total: 38, Incongruentes: 38, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25596
+[cun25596.zhf_urbana] Total: 32, Incongruentes: 1, Completas: 31, Clasificación: mayoría datos completos
+[cun25596.zhf_rural] Total: 43, Incongruentes: 43, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25599
+[cun25599.zhf_urbana] Total: 48, Incongruentes: 2, Completas: 46, Clasificación: mayoría datos completos
+[cun25599.zhf_rural] Total: 74, Incongruentes: 74, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25645
+[cun25645.zhf_urbana] Total: 46, Incongruentes: 46, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25645.zhf_rural] Total: 145, Incongruentes: 145, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25653
+[cun25653.zhf_urbana] Total: 18, Incongruentes: 18, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25653.zhf_rural] Total: 68, Incongruentes: 68, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25662
+[cun25662.zhf_urbana] Total: 64, Incongruentes: 64, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25662.zhf_rural] Total: 48, Incongruentes: 48, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25718
+[cun25718.zhf_urbana] Total: 45, Incongruentes: 45, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25718.zhf_rural] Total: 75, Incongruentes: 75, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25743
+[cun25743.zhf_urbana] Total: 107, Incongruentes: 107, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25743.zhf_rural] Total: 196, Incongruentes: 28, Completas: 168, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25769
+[cun25769.zhf_urbana] Total: 147, Incongruentes: 1, Completas: 146, Clasificación: mayoría datos completos
+[cun25769.zhf_rural] Total: 98, Incongruentes: 98, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25777
+[cun25777.zhf_urbana] Total: 30, Incongruentes: 0, Completas: 30, Clasificación: mayoría datos completos
+[cun25777.zhf_rural] Total: 311, Incongruentes: 0, Completas: 311, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25779
+[cun25779.zhf_urbana] Total: 38, Incongruentes: 38, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25779.zhf_rural] Total: 51, Incongruentes: 51, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25781
+[cun25781.zhf_urbana] Total: 24, Incongruentes: 0, Completas: 24, Clasificación: mayoría datos completos
+[cun25781.zhf_rural] Total: 246, Incongruentes: 0, Completas: 246, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25793
+[cun25793.zhf_urbana] Total: 32, Incongruentes: 0, Completas: 32, Clasificación: mayoría datos completos
+[cun25793.zhf_rural] Total: 348, Incongruentes: 1, Completas: 347, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25797
+[cun25797.zhf_urbana] Total: 42, Incongruentes: 42, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25797.zhf_rural] Total: 59, Incongruentes: 59, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25805
+[cun25805.zhf_urbana] Total: 40, Incongruentes: 1, Completas: 39, Clasificación: mayoría datos completos
+[cun25805.zhf_rural] Total: 83, Incongruentes: 83, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25807
+[cun25807.zhf_urbana] Total: 31, Incongruentes: 1, Completas: 30, Clasificación: mayoría datos completos
+[cun25807.zhf_rural] Total: 180, Incongruentes: 180, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25815
+[cun25815.zhf_urbana] Total: 143, Incongruentes: 1, Completas: 142, Clasificación: mayoría datos completos
+[cun25815.zhf_rural] Total: 161, Incongruentes: 161, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25839
+[cun25839.zhf_urbana] Total: 55, Incongruentes: 55, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25839.zhf_rural] Total: 112, Incongruentes: 112, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25841
+[cun25841.zhf_urbana] Tabla sin registros.
+[cun25841.zhf_rural] Tabla sin registros.
+
+Analizando esquema: cun25843
+[cun25843.zhf_urbana] Total: 48, Incongruentes: 0, Completas: 48, Clasificación: mayoría datos completos
+[cun25843.zhf_rural] Total: 78, Incongruentes: 1, Completas: 77, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25845
+[cun25845.zhf_urbana] Total: 32, Incongruentes: 32, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25845.zhf_rural] Total: 38, Incongruentes: 38, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25862
+[cun25862.zhf_urbana] Total: 19, Incongruentes: 0, Completas: 19, Clasificación: mayoría datos completos
+[cun25862.zhf_rural] Total: 914, Incongruentes: 1, Completas: 913, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25867
+[cun25867.zhf_urbana] Total: 32, Incongruentes: 32, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25867.zhf_rural] Total: 13, Incongruentes: 13, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25871
+[cun25871.zhf_urbana] Total: 48, Incongruentes: 48, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25871.zhf_rural] Total: 29, Incongruentes: 29, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25873
+[cun25873.zhf_urbana] Total: 48, Incongruentes: 48, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25873.zhf_rural] Total: 83, Incongruentes: 83, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25875
+[cun25875.zhf_urbana] Total: 153, Incongruentes: 0, Completas: 153, Clasificación: mayoría datos completos
+[cun25875.zhf_rural] Total: 501, Incongruentes: 1, Completas: 500, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25878
+[cun25878.zhf_urbana] Total: 67, Incongruentes: 67, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25878.zhf_rural] Total: 148, Incongruentes: 0, Completas: 148, Clasificación: mayoría datos completos
+
+Analizando esquema: cun25885
+[cun25885.zhf_urbana] Total: 100, Incongruentes: 100, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25885.zhf_rural] Total: 56, Incongruentes: 56, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Analizando esquema: cun25898
+[cun25898.zhf_urbana] Total: 43, Incongruentes: 43, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+[cun25898.zhf_rural] Total: 30, Incongruentes: 30, Completas: 0, Clasificación: mayoría ceros/nulos/valores pequeños
+
+Análisis completado.
