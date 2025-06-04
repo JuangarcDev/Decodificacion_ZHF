@@ -1,0 +1,5 @@
+🧹 Municipio 25645 - Registros eliminados de zhf_rural.
+✅ Municipio 25645 - 146 registros insertados en zhf_rural.
+🧹 Municipio 25645 - Registros eliminados de zhf_urbana.
+✅ Municipio 25645 - 13 registros insertados en zhf_urbana.
+✅ Municipio 25645 - 32 registros insertados en zhf_urbana.
