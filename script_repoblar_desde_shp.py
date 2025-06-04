@@ -17,7 +17,7 @@ DB_CONFIG = {
 # ---------------------------------
 # Parámetros de ejecución del script
 # ---------------------------------
-MUNICIPIOS = ['25645']
+MUNICIPIOS = ['25645', '25035']
 
 # Rutas de los SHP por municipio
 RUTAS_SHP = {
@@ -26,13 +26,13 @@ RUTAS_SHP = {
         'urbana': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25645_SAN_ANTONIO\ZHF_URBANAS\Zonas Homogéneas Físicas Urbanas\Zonas Homogeneas Fisicas Centros Poblados.shp', r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25645_SAN_ANTONIO\ZHF_URBANAS\Zonas Homogéneas Físicas Urbanas\Zonas Homogeneas Fisicas Urbanas.shp'],
     },
     
-#    '25222': {
-#        'rural': [],  # Sin información rural
-#        'urbano': [r'ruta/a/NOMBRE_ARCHIVO.shp']
-#    },
+    '25035': {
+       'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25035_ANAPOIMA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas Homogeneas Fisicas Rurales.shp'], 
+       'urbana': []  # Sin información urbana
+    },
 #    '25333': {
 #        'rural': [r'ruta/a/NOMBRE_SHP1.shp', r'ruta/a/NOMBRE_SHP2.shp'],
-#        'urbano': [r'ruta/a/NOMBRE_25333_1.shp', r'ruta/a/NOMBRE_25333_2.shp']
+#        'urbana': [r'ruta/a/NOMBRE_25333_1.shp', r'ruta/a/NOMBRE_25333_2.shp']
 #    }
 }
 
@@ -42,12 +42,12 @@ RUTAS_SHP = {
 MAPEO_CAMPOS = {
     'zhf_rural': {
         'codigo': ['ID_ZHFR', 'ID', 'COD_ZHF'],
-        'codigo_zona_fisica': ['ZHFR', 'ZONA_HOMO'],
+        'codigo_zona_fisica': ['ZHFR', 'ZHF_R'],
         'area_homogenea_tierra': ['AHT', 'uso_suelo'],
-        'disponibilidad_agua': ['Disp_Aguas', 'DISP_AGUA'],
-        'influencia_vial': ['Inf_Vial', 'INFL_VIAL'],
+        'disponibilidad_agua': ['Disp_Aguas', 'Disponibili'],
+        'influencia_vial': ['Inf_Vial', 'Influencia'],
         'uso_actual_suelo': ['Uso_Actual', 'USO_ACT'],
-        'norma_uso_suelo': ['Uso', 'NORM_USO']
+        'norma_uso_suelo': ['Uso', 'norma_uso']
     },
     'zhf_urbana': {
         'codigo': ['ID_ZHFCP', 'ID_ZHFU'],
@@ -146,8 +146,8 @@ def procesar_shp(engine, municipio, tipo, rutas_shp, mapeo_campos, log_lines):
                         'norma_uso_suelo': campos.get('norma_uso_suelo')
                     })
                 else:  # urbano
-                    norma_uso = (campos.get('norma_uso_suelo_categoria') or '') + \
-                                (campos.get('norma_uso_suelo_area_activ') or '') + \
+                    norma_uso = (campos.get('norma_uso_suelo_categoria') or '') + ', ' + \
+                                (campos.get('norma_uso_suelo_area_activ') or '') + ', ' + \
                                 (campos.get('norma_uso_suelo_tratamiento') or '')
                     registro.update({
                         'topografia': campos.get('topografia'),
