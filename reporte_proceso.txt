@@ -30,3 +30,6 @@
 🧹 Municipio 25815 - Registros eliminados de zhf_rural.
 ✅ Municipio 25815 - 161 registros insertados en zhf_rural.
 ❌ Municipio 25815 - Sin archivos SHP para urbana.
+🧹 Municipio 25269 - Registros eliminados de zhf_rural.
+✅ Municipio 25269 - 404 registros insertados en zhf_rural.
+❌ Municipio 25269 - Sin archivos SHP para urbana.

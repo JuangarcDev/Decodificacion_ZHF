@@ -17,7 +17,7 @@ DB_CONFIG = {
 # ---------------------------------
 # Parámetros de ejecución del script
 # ---------------------------------
-MUNICIPIOS = ['25645', '25035', '25040', '25599', '25326', '25596', '25769', '25805', '25807', '25815']
+MUNICIPIOS = ['25645', '25035', '25040', '25599', '25326', '25596', '25769', '25805', '25807', '25815', '25269']
 
 # Rutas de los SHP por municipio
 RUTAS_SHP = {
@@ -62,6 +62,10 @@ RUTAS_SHP = {
         'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25815_TOCAIMA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas Homogeneas Fisicas Rurales.shp'],
         'urbana': []    # Sin información urbana
     },
+    '25269': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25269_FACATATIVA\ZHF_RURALES\shp_rural\zhf_rural_facatativa.shp'],
+        'urbana': []    # Sin información urbana
+    },
 }
 
 # -------------------------
@@ -69,8 +73,8 @@ RUTAS_SHP = {
 # -------------------------
 MAPEO_CAMPOS_GENERAL = {
     'zhf_rural': {
-        'codigo': ['ID_ZHFR', 'COD_ZHF'],
-        'codigo_zona_fisica': ['ZHFR', 'ZHF_R', 'codigo_1', 'COD_ZHFR_1'],
+        'codigo': ['ID_ZHFR', 'COD_ZHF', 'ID_ZHF_R'],
+        'codigo_zona_fisica': ['ZHFR', 'ZHF_R', 'codigo_1', 'COD_ZHFR_1', 'Cod_ZHF'],
         'area_homogenea_tierra': ['AHT', 'a_hom_tier', 'VALOR_PO_1','uso_suelo'],
         'disponibilidad_agua': ['Disp_Aguas', 'Disponibil', 'AV_disponi', 'AV_Disponi', 'aguas'],
         'influencia_vial': ['Inf_Vial', 'Influencia', 'AV_Incluen', 'AV_Influen', 'Av_Influen', 'vias', 'AV_Influ_V'],
@@ -106,16 +110,6 @@ MAPEO_CAMPOS_PERSONALIZADO = {
         }
     },
     # ... otros municipios
-    '25035': {
-        'zhf_rural': {
-            'vigencia': datetime(2024, 1, 1),
-        }
-    },
-    '25040': {
-        'zhf_rural': {
-            'vigencia': datetime(2024, 1, 1),
-        }
-    },
     '25599': {
         'zhf_rural': {
             'vigencia': ['vigencia'],
@@ -151,7 +145,13 @@ MAPEO_CAMPOS_PERSONALIZADO = {
             'vigencia': ['vigencia'],
         }
     },
-
+    '25269': 
+    {
+        'zhf_rural': {
+            'area_homogenea_tierra': ['Area_Homog'],
+            'norma_uso_suelo': ['Norma_Uso_'],
+        }
+    },
 }
 
 # -------------------------
