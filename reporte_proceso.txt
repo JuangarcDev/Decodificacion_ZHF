@@ -3,3 +3,30 @@
 🧹 Municipio 25645 - Registros eliminados de zhf_urbana.
 ✅ Municipio 25645 - 13 registros insertados en zhf_urbana.
 ✅ Municipio 25645 - 32 registros insertados en zhf_urbana.
+🧹 Municipio 25035 - Registros eliminados de zhf_rural.
+✅ Municipio 25035 - 136 registros insertados en zhf_rural.
+❌ Municipio 25035 - Sin archivos SHP para urbana.
+🧹 Municipio 25040 - Registros eliminados de zhf_rural.
+✅ Municipio 25040 - 129 registros insertados en zhf_rural.
+❌ Municipio 25040 - Sin archivos SHP para urbana.
+🧹 Municipio 25599 - Registros eliminados de zhf_rural.
+✅ Municipio 25599 - 74 registros insertados en zhf_rural.
+❌ Municipio 25599 - Sin archivos SHP para urbana.
+🧹 Municipio 25326 - Registros eliminados de zhf_rural.
+✅ Municipio 25326 - 178 registros insertados en zhf_rural.
+❌ Municipio 25326 - Sin archivos SHP para urbana.
+🧹 Municipio 25596 - Registros eliminados de zhf_rural.
+✅ Municipio 25596 - 43 registros insertados en zhf_rural.
+❌ Municipio 25596 - Sin archivos SHP para urbana.
+🧹 Municipio 25769 - Registros eliminados de zhf_rural.
+✅ Municipio 25769 - 98 registros insertados en zhf_rural.
+❌ Municipio 25769 - Sin archivos SHP para urbana.
+🧹 Municipio 25805 - Registros eliminados de zhf_rural.
+✅ Municipio 25805 - 83 registros insertados en zhf_rural.
+❌ Municipio 25805 - Sin archivos SHP para urbana.
+🧹 Municipio 25807 - Registros eliminados de zhf_rural.
+✅ Municipio 25807 - 180 registros insertados en zhf_rural.
+❌ Municipio 25807 - Sin archivos SHP para urbana.
+🧹 Municipio 25815 - Registros eliminados de zhf_rural.
+✅ Municipio 25815 - 161 registros insertados en zhf_rural.
+❌ Municipio 25815 - Sin archivos SHP para urbana.

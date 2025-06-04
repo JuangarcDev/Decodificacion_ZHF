@@ -17,7 +17,7 @@ DB_CONFIG = {
 # ---------------------------------
 # Parámetros de ejecución del script
 # ---------------------------------
-MUNICIPIOS = ['25645', '25035']
+MUNICIPIOS = ['25645', '25035', '25040', '25599', '25326', '25596', '25769', '25805', '25807', '25815']
 
 # Rutas de los SHP por municipio
 RUTAS_SHP = {
@@ -30,24 +30,53 @@ RUTAS_SHP = {
        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25035_ANAPOIMA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas Homogeneas Fisicas Rurales.shp'], 
        'urbana': []  # Sin información urbana
     },
-#    '25333': {
-#        'rural': [r'ruta/a/NOMBRE_SHP1.shp', r'ruta/a/NOMBRE_SHP2.shp'],
-#        'urbana': [r'ruta/a/NOMBRE_25333_1.shp', r'ruta/a/NOMBRE_25333_2.shp']
-#    }
+    '25040': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25040_ANOLAIMA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas_Homogeneas_Fisicas_Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25599': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25599_APULO\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas_Homogeneas_Fisicas_Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25326': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25326_GUATAVITA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas_Homogeneas_Fisicas_Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25596': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25596_QUIPILE\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas Homogeneas Fisicas Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25769': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25769_SUBACHOQUE\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas_Homogeneas_Fisicas_Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25805' : {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25805_TIBACUY\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas_Homogeneas_Fisicas_Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25807': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25807_TIBIRITA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\ZONA HOMOGENEA FISICA RURAL.shp'],
+        'urbana': []    # Sin información urbana
+    },
+    '25815': {
+        'rural': [r'C:\ACC\Zonas_Homogeneas_Decodificacion\Insumos\ARCHIVOS_NAS\Go\25815_TOCAIMA\ZHF_RURALES\Zonas Homogéneas Físicas Rurales\Zonas Homogeneas Fisicas Rurales.shp'],
+        'urbana': []    # Sin información urbana
+    },
 }
 
 # -------------------------
-# Mapeo de campos por múltiples nombres posibles
+# Mapeo de campos por defecto (genérico)
 # -------------------------
-MAPEO_CAMPOS = {
+MAPEO_CAMPOS_GENERAL = {
     'zhf_rural': {
-        'codigo': ['ID_ZHFR', 'ID', 'COD_ZHF'],
-        'codigo_zona_fisica': ['ZHFR', 'ZHF_R'],
-        'area_homogenea_tierra': ['AHT', 'uso_suelo'],
-        'disponibilidad_agua': ['Disp_Aguas', 'Disponibili'],
-        'influencia_vial': ['Inf_Vial', 'Influencia'],
-        'uso_actual_suelo': ['Uso_Actual', 'USO_ACT'],
-        'norma_uso_suelo': ['Uso', 'norma_uso']
+        'codigo': ['ID_ZHFR', 'COD_ZHF'],
+        'codigo_zona_fisica': ['ZHFR', 'ZHF_R', 'codigo_1', 'COD_ZHFR_1'],
+        'area_homogenea_tierra': ['AHT', 'a_hom_tier', 'VALOR_PO_1','uso_suelo'],
+        'disponibilidad_agua': ['Disp_Aguas', 'Disponibil', 'AV_disponi', 'AV_Disponi', 'aguas'],
+        'influencia_vial': ['Inf_Vial', 'Influencia', 'AV_Incluen', 'AV_Influen', 'Av_Influen', 'vias', 'AV_Influ_V'],
+        'uso_actual_suelo': ['Uso_Actual', 'AV_uso_Act', 'AV_Uso_Act', 'Av_Uso_Act', 'uso_suel_1', 'AV_UsoSuel'],
+        'norma_uso_suelo': ['Uso', 'norma_uso', 'clasi','Usos', 'norma_us_1', 'norma_uso_', 'CLASIFICAC', 'Grupo'],
+        'vigencia': datetime(2024, 1, 1)     
     },
     'zhf_urbana': {
         'codigo': ['ID_ZHFCP', 'ID_ZHFU'],
@@ -59,20 +88,70 @@ MAPEO_CAMPOS = {
         'norma_uso_suelo_categoria': ['Categoria', 'CAT_USO'],
         'norma_uso_suelo_area_activ': ['Area_Activ', 'AREA_ACT'],
         'norma_uso_suelo_tratamiento': ['Tratamient', 'TRAT_USO'],
-        'tipificacion_construccion': ['Tipificaci', 'TIPIF_CONS']
+        'tipificacion_construccion': ['Tipificaci', 'TIPIF_CONS'],
+        'vigencia': datetime(2024, 1, 1)      
     }
 }
 
 # -------------------------
 # Configuración personalizada por municipio (si aplica)
 # -------------------------
-CONFIG_PERSONALIZADA = {
-    # Ejemplo:
-    # '25111': {
-    #     'zhf_rural': {
-    #         'Uso': 'norma_uso_suelo_personalizado'
-    #     }
-    # }
+MAPEO_CAMPOS_PERSONALIZADO = {
+    '25645': {
+        'zhf_urbana': {
+            'vigencia': datetime(2023, 1, 1),  # si se usa uno solo ya concatenado
+        },
+        'zhf_rural': {
+            'vigencia': datetime(2023, 1, 1),
+        }
+    },
+    # ... otros municipios
+    '25035': {
+        'zhf_rural': {
+            'vigencia': datetime(2024, 1, 1),
+        }
+    },
+    '25040': {
+        'zhf_rural': {
+            'vigencia': datetime(2024, 1, 1),
+        }
+    },
+    '25599': {
+        'zhf_rural': {
+            'vigencia': ['vigencia'],
+        }
+    },
+    '25596': {
+        'zhf_rural': {
+            'vigencia': ['vigencia'],
+        }
+    },
+    '25769':
+    {
+        'zhf_rural': {
+            'norma_uso_suelo': ['norma_uso_'],
+        }
+    },
+    '25805': 
+    {
+        'zhf_rural': {
+            'norma_uso_suelo': ['CLASIFICAC'],
+        }
+    },
+    '25807': 
+    {
+        'zhf_rural': {
+            'norma_uso_suelo': ['norma_AV'],
+        }
+    },
+    '25815': 
+    {
+        'zhf_rural': {
+            'norma_uso_suelo': ['Grupo'],
+            'vigencia': ['vigencia'],
+        }
+    },
+
 }
 
 # -------------------------
@@ -85,6 +164,15 @@ def encontrar_campo(gdf, posibles_nombres):
     return None
 
 # -------------------------
+# Obtener mapeo efectivo para municipio y tipo
+# -------------------------
+def obtener_mapeo(municipio, tipo):
+    mapeo_def = MAPEO_CAMPOS_GENERAL.get(f"zhf_{tipo}", {})
+    mapeo_mpio = MAPEO_CAMPOS_PERSONALIZADO.get(municipio, {}).get(f"zhf_{tipo}", {})
+    # fusionar dando prioridad a mapeo_mpio
+    return {**mapeo_def, **mapeo_mpio}
+
+# -------------------------
 # Función para establecer la conexión a la base de datos
 # -------------------------
 def conectar_bd(config):
@@ -94,10 +182,10 @@ def conectar_bd(config):
 # -------------------------
 # Función para procesar los SHP y actualizar la base de datos
 # -------------------------
-def procesar_shp(engine, municipio, tipo, rutas_shp, mapeo_campos, log_lines):
+def procesar_shp(engine, municipio, tipo, rutas_shp, log_lines):
     esquema = f"cun{municipio}"
     tabla = f"zhf_{tipo}"
-    mapeo = mapeo_campos.get(tabla, {})
+    mapeo = obtener_mapeo(municipio, tipo)
 
     if not rutas_shp:
         log_lines.append(f"❌ Municipio {municipio} - Sin archivos SHP para {tipo}.")
@@ -127,13 +215,14 @@ def procesar_shp(engine, municipio, tipo, rutas_shp, mapeo_campos, log_lines):
             for _, fila in gdf.iterrows():
                 campos = {}
                 for campo_objetivo, nombres_posibles in mapeo.items():
-                    campos[campo_objetivo] = str(fila.get(encontrar_campo(gdf, nombres_posibles), '')).strip()
-
+                    if isinstance(nombres_posibles, list):
+                        campos[campo_objetivo] = str(fila.get(encontrar_campo(gdf, nombres_posibles), '')).strip()
+                    else:
+                        campos[campo_objetivo] = nombres_posibles
                 registro = {
                     'id': id_base + contador,
                     'codigo': campos.get('codigo'),
                     'codigo_zona_fisica': campos.get('codigo_zona_fisica'),
-                    'vigencia': datetime(2023, 1, 1),
                     'geometria': fila.geometry
                 }
 
@@ -143,7 +232,8 @@ def procesar_shp(engine, municipio, tipo, rutas_shp, mapeo_campos, log_lines):
                         'disponibilidad_agua': campos.get('disponibilidad_agua'),
                         'influencia_vial': campos.get('influencia_vial'),
                         'uso_actual_suelo': campos.get('uso_actual_suelo'),
-                        'norma_uso_suelo': campos.get('norma_uso_suelo')
+                        'norma_uso_suelo': campos.get('norma_uso_suelo'),
+                        'vigencia': campos.get('vigencia')
                     })
                 else:  # urbano
                     norma_uso = (campos.get('norma_uso_suelo_categoria') or '') + ', ' + \
@@ -155,7 +245,8 @@ def procesar_shp(engine, municipio, tipo, rutas_shp, mapeo_campos, log_lines):
                         'servicio_publico': campos.get('servicio_publico'),
                         'uso_actual_suelo': campos.get('uso_actual_suelo'),
                         'norma_uso_suelo': norma_uso,
-                        'tipificacion_construccion': campos.get('tipificacion_construccion')
+                        'tipificacion_construccion': campos.get('tipificacion_construccion'),
+                        'vigencia': campos.get('vigencia')                        
                     })
 
                 registros.append(registro)
@@ -182,7 +273,9 @@ def main():
             rutas = RUTAS_SHP.get(municipio, {})
             for tipo in ['rural', 'urbana']:
                 rutas_tipo = rutas.get(tipo, [])
-                procesar_shp(engine, municipio, tipo, rutas_tipo, MAPEO_CAMPOS, log_lines)
+                # ✅ Solo pasas engine, municipio, tipo, rutas_tipo, log_lines
+                procesar_shp(engine, municipio, tipo, rutas_tipo, log_lines)
+
         engine.dispose()
     except Exception as e:
         log_lines.append(f"❌ Error general en el proceso: {e}")
